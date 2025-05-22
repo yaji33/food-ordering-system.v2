@@ -38,14 +38,15 @@
             this.panel1.Size = new System.Drawing.Size(1603, 65);
             this.panel1.TabIndex = 2;
             // 
-            // OrderHisyory
+            // OrderHistory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.panel1);
             this.MinimumSize = new System.Drawing.Size(1606, 0);
-            this.Name = "OrderHisyory";
+            this.Name = "OrderHistory";
             this.Size = new System.Drawing.Size(1606, 894);
+            this.Load += new System.EventHandler(this.OrderHistory_Load);
             this.ResumeLayout(false);
 
         }

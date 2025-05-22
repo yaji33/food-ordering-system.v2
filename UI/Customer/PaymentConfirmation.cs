@@ -283,7 +283,7 @@ namespace food_ordering_system.v2.UI.Customer
         {
             try
             {
-                // First, create the order record - make sure we're passing the correct parameter
+                
                 createdOrderId = OrderRepo.CreateOrder(customerId, totalAmount, "Pending");
 
                 if (createdOrderId <= 0)
@@ -310,8 +310,7 @@ namespace food_ordering_system.v2.UI.Customer
                 // Add order items to the database
                 OrderRepo.AddOrderItems(createdOrderId, orderItems);
 
-                // Create payment record with appropriate status
-                // Make sure we're using the correct method signature
+               
                 int paymentId = PaymentRepo.CreatePayment(createdOrderId, totalAmount, selectedPaymentMethod);
 
                 if (paymentId <= 0)
@@ -353,7 +352,7 @@ namespace food_ordering_system.v2.UI.Customer
                     }
                     catch
                     {
-                        // Silently fail if we can't update the status
+                      
                     }
                 }
             }

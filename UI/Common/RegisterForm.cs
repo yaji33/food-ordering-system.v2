@@ -111,7 +111,7 @@ namespace food_ordering_system.v2.UI.Common
                 return false;
             }
 
-            // You could add more sophisticated validation (email format, phone format, etc.)
+            
 
             return true;
         }
@@ -139,6 +139,11 @@ namespace food_ordering_system.v2.UI.Common
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void RegisterForm_Load(object sender, EventArgs e)
         {
 
         }

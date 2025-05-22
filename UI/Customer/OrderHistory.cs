@@ -16,5 +16,10 @@ namespace food_ordering_system.v2.UI.Customer
         {
             InitializeComponent();
         }
+
+        private void OrderHistory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -66,7 +66,7 @@ namespace food_ordering_system.v2.UI.Customer
 
             viewProfileButton.Click += (s, args) =>
             {
-                // This is just a placeholder - the button will show but not function
+                
                 MessageBox.Show("Profile view functionality is not implemented yet.",
                                "Coming Soon", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 profileDialog.Close();
@@ -119,7 +119,7 @@ namespace food_ordering_system.v2.UI.Customer
         }
         private void MainForm_Load(object sender, EventArgs e)
         {
-            // This appears to be duplicate of MainForm_load
+            
         }
         private void button2_Click(object sender, EventArgs e)
         {

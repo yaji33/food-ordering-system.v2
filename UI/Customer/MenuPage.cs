@@ -684,7 +684,7 @@ namespace food_ordering_system.v2.UI.Customer
                 return;
             }
 
-            // Create a deep copy of cart items to pass to the dialog
+           
             List<MenuItem> cartItemsCopy = cartItems.Select(item => new MenuItem
             {
                 MenuItemId = item.MenuItemId,
@@ -713,12 +713,12 @@ namespace food_ordering_system.v2.UI.Customer
 
         private void panel2_Paint(object sender, PaintEventArgs e)
         {
-            // Already implemented in the designer
+            
         }
 
         private void panel3_Paint(object sender, PaintEventArgs e)
         {
-            // Panel for menu items display
+            
         }
 
         // These event handlers are now handled by CategoryButton_Click

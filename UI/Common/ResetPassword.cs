@@ -84,5 +84,10 @@ namespace food_ordering_system.v2.UI.Common
         {
             this.Close();
         }
+
+        private void txtConfirmPassword_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

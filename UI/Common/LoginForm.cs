@@ -23,9 +23,9 @@ namespace food_ordering_system.v2.UI.Common
             authService = new AuthService();
 
             // Set password character to hide actual input
-            txtPassword.PasswordChar = '•'; // You can also use '*' or any other character
-            // Optionally, you can also set UseSystemPasswordChar to true instead
-            // txtPassword.UseSystemPasswordChar = true;
+            txtPassword.PasswordChar = '•'; 
+            
+           
         }
 
         // Empty event handlers
@@ -55,7 +55,7 @@ namespace food_ordering_system.v2.UI.Common
                     return;
                 }
 
-                // Try admin login first
+                
                 var adminResult = authService.LoginAdmin(username, password);
                 if (adminResult.Success)
                 {
@@ -66,7 +66,7 @@ namespace food_ordering_system.v2.UI.Common
                     return;
                 }
 
-                // Then try customer login
+                
                 var customerResult = authService.LoginCustomer(username, password);
                 if (customerResult.Success)
                 {
@@ -100,7 +100,7 @@ namespace food_ordering_system.v2.UI.Common
         {
             try
             {
-                // Use the static CurrentUserId instead of a method call
+               
                 int loggedInCustomerId = AuthService.CurrentUserId;
 
                 Customer.MainForm menuForm = new Customer.MainForm(loggedInCustomerId);
